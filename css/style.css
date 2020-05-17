@@ -1,0 +1,108 @@
+/* common */
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1,h2,h3,h4 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+li {
+    list-style: none;
+}
+
+ul{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    background: #ddd;
+    position: relative;
+    height: 100px;
+}
+
+header nav ul {
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    height: 100px;
+    line-height: 100px;
+
+}
+
+nav ul li{
+    float: left;
+    margin-left:55px;
+}
+
+nav ul li:first-child {
+    margin-left:0 ;
+}
+
+footer {
+    background: #ddd;
+    text-align: center;
+}
+
+
+/* top-page */
+
+.main-eyecatch{
+    height: 500px;
+    background: #aaa;
+    background-image: url("../images/image10.jpg");
+    background-size: contain;
+    text-align: center;
+}
+.main-eyecatch-text {
+    padding-top:170px;
+}
+.main-eyecatch-logo {
+    margin-top: 44px;
+}
+
+.reserve-button{
+    width: 248px;
+    height: 57px;
+    border:2px solid #333;
+    line-height: 57px;
+    text-align: center;
+    //float: left;
+    margin-top:21.5px ;
+}
+
+.reserve-button:first-child {
+    margin-right:102px ;
+}
+
+
+.reserve-button-container{
+    height: 100px;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* .inner {
+    text-align: center;
+    width: 980px;
+    margin: 0 auto;
+} */
