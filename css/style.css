@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4 ,p{
     margin: 0;
 }
 
@@ -97,12 +97,68 @@ footer {
     background: #eee;
     display: flex;
     justify-content: center;
+    margin-bottom:68px;
 
 }
 
-
-/* .inner {
+.main-p{
     text-align: center;
+    line-height: 20px;
+}
+
+
+
+.section-feature-inner  {
     width: 980px;
+    height: 583px;
     margin: 0 auto;
-} */
+    text-align: center;
+    background: #ddd;
+}
+
+.section-feature-3col {
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.section-feature-3col-card {
+    
+    text-align: center;
+   
+    margin-right: 20px;
+}
+
+.section-feature-3col-card:last-child {
+    margin-right: 0;
+}
+
+.section-feature-3col-btn {
+    width: 178px;
+    height: 45px;
+    margin: 0 auto;
+    background: #e8e;
+    line-height: 45px;
+    //font-weight: bold;
+    color: #fff;
+}
+
+.section-feature-3col-text {
+    font-size: 14px;
+    line-height: 1.5rem;
+    text-align: left;
+    height:110px ;
+}
+
+.section-title {
+    padding: 22px 0 15px 0;
+    
+}
+
+.sub-title {
+    font-size: 13px;
+    margin-bottom:27px;
+
+}
