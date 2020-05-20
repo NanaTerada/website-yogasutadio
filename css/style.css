@@ -56,8 +56,16 @@ nav ul li:first-child {
 }
 
 footer {
-    background: #ddd;
+    background: #eee;
     text-align: center;
+}
+
+footer nav {
+    margin: 26px 0 33px 0;
+}
+
+footer h2 {
+    padding-top:29px;
 }
 
 
@@ -230,3 +238,42 @@ footer {
     line-height: 51px;
     margin: 25px auto;
 }
+
+
+.section-news-campagin-container {
+    display: flex;
+    justify-content: center;
+    width: 980px;
+    margin: 0 auto;
+    
+}
+
+.section-news-inner , .section-campagin-inner {
+    text-align: center;
+    padding: 20px;
+}
+
+#news dl {
+    border-bottom: 2px dashed #333;
+    width: 445px;
+    line-height: 3rem;
+}
+
+#news dt {
+    float: left;
+    clear: left;
+    margin-right: 40px;
+}
+
+#news dd {
+    text-align: left;
+}
+
+
+
+.banner{
+    margin-bottom: 20px;
+}
+
+
+
