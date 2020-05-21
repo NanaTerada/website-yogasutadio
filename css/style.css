@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    font-family: 'Abril Fatface', cursive ,'Noto Serif JP', serif;
 }
 
 h1,h2,h3,h4 ,p{
@@ -32,9 +33,11 @@ ul{
 }
 
 header {
-    background: #ddd;
+    background: #eee;
     position: relative;
     height: 100px;
+
+    z-index: 10;
 }
 
 header nav ul {
@@ -49,10 +52,15 @@ header nav ul {
 nav ul li{
     float: left;
     margin-left:55px;
+    letter-spacing: 0.3rem;
 }
 
 nav ul li:first-child {
     margin-left:0 ;
+}
+
+nav ul li:hover {
+    opacity: 0.7;
 }
 
 footer {
@@ -75,9 +83,29 @@ footer h2 {
     height: 500px;
     background: #aaa;
     background-image: url("../images/image10.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     text-align: center;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
 }
+
+.main-eyecatch::before {
+    content: '';
+    background: inherit;
+    position: absolute;
+    top:-5px;
+    right:-5px;
+    bottom:-5px;
+    left:-5px;
+    //filter:blur(5px);
+    filter: contrast(50%);;
+    z-index: -1;
+}
+
+
+
 .main-eyecatch-text {
     padding-top:170px;
 }
@@ -85,24 +113,40 @@ footer h2 {
     margin-top: 44px;
 }
 
-.reserve-button{
+/* 後からaタグいれたらおかしくなった・・・ */
+.reserve-button {
     width: 248px;
     height: 57px;
-    border:2px solid #333;
+    //border:2px solid #ddd;
+    background:#ddd;
     line-height: 57px;
     text-align: center;
     //float: left;
     margin-top:21.5px ;
+    box-shadow:3px 3px 10px rgba(0,0,0,0.2);
 }
+
 
 .reserve-button:first-child {
     margin-right:102px ;
 }
 
+.reserve-button:hover {
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.4);
+    transform: translateY(-5px);
+    
+}
+
+.reserve-button:active {
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    transform: translateY(0px);
+    
+}
+
 
 .reserve-button-container{
     height: 100px;
-    background: #eee;
+    background: #fee;
     display: flex;
     justify-content: center;
     margin-bottom:68px;
@@ -121,7 +165,7 @@ footer h2 {
     height: 583px;
     margin: 0 auto;
     text-align: center;
-    background: #ddd;
+    //background: #ddd;
 }
 
 .section-feature-3col {
@@ -139,6 +183,7 @@ footer h2 {
     background: #eee;
     margin-right: 20px;
     padding:5px 5px 15px 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0,0,0.2);
 }
 
 .section-feature-3col-card:last-child {
@@ -164,6 +209,8 @@ footer h2 {
 
 .section-title {
     padding: 22px 0 15px 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
     
 }
 
@@ -177,10 +224,11 @@ footer h2 {
     display: flex;
     background: #fff;
     border-radius: 10px;
-    width: 340px;
+    width: 360px;
     height: 92px;
     font-weight: bold;
     margin-bottom: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0,0,0.2);
 }
 .section-price-card:nth-child(2n+1) {
     margin-right: 57px;
@@ -188,7 +236,7 @@ footer h2 {
 
 .section-price-card-left {
     text-align: center;
-    width:170px;
+    width:190px;
     display: flex;
     align-items: center;
 }
@@ -202,7 +250,7 @@ footer h2 {
 }
 
 .section-price-card-right span {
-    font-size: 1rem
+    font-size: 0.7rem
 }
 
 .section-price-card-text {
