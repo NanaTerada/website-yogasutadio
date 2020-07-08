@@ -36,9 +36,9 @@ header {
     background: #eee;
     position: relative;
     height: 100px;
-
     z-index: 10;
 }
+
 
 header nav ul {
     position: absolute;
@@ -157,6 +157,15 @@ footer h2 {
 .main-p{
     text-align: center;
     line-height: 1.8rem;
+    letter-spacing: 0.1rem;
+
+    /* //グラデーションの練習 */
+
+    color: #ACB6E5;
+    background: -webkit-linear-gradient(0deg, #a3ccb1 25%,#a3ccb1 50%,#e5b8a1 75%,#bcacbf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 
@@ -185,6 +194,7 @@ footer h2 {
     margin-right: 20px;
     padding:5px 5px 15px 5px;
     box-shadow: 3px 3px 10px rgba(0, 0,0,0.2);
+    letter-spacing: 0.1rem;
 }
 
 .section-feature-3col-card:last-child {
