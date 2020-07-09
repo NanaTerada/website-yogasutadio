@@ -32,6 +32,14 @@ ul{
     clear: both;
 }
 
+h1 img {
+    width: 100%;
+    height: auto;
+}
+h1 {
+    width: 100px;
+}
+
 header {
     background: #eee;
     position: relative;
@@ -372,6 +380,8 @@ footer h2 {
     border-bottom: 2px dashed #333;
     width: 445px;
     line-height: 3rem;
+
+    margin: 0 auto;
 }
 
 #news dt {
@@ -400,4 +410,79 @@ footer h2 {
 }
 
 
+@media screen and (max-width: 959px) {
+
+    .reserve-button:first-child {
+        margin-right:20px ;
+    }
+
+    .reserve-button-container{
+        height: 100px;
+        display: flex;
+        justify-content:space-around;     
+    }
+
+    
+
+    .main-p{
+        padding: 5px 10px;
+        text-align: left;
+        line-height: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    
+
+    .section-feature-inner  {
+        width: 90%;
+        height: auto;
+
+    }
+
+    .section-feature-3col {
+    
+        display: block;
+        background: lightblue;
+        
+    }
+
+    .section-feature-3col-card {
+      margin:20px auto;
+    }
+
+    .section-feature-3col-card:last-child {
+        margin:20px auto;
+    }
+
+    .section-price-card-area {
+        display: block;
+    }
+    .section-price-inner {
+        width: 90%;    
+
+    }
+
+    #price {
+        height:auto;  
+    }
+    .section-price-card:nth-child(2n+1) {
+        margin-right: auto;
+    }
+
+    .section-price-card {
+        margin: 20px auto;
+    }
+
+    .section-news-campagin-container {
+        display: block;
+        width: 90%;
+        margin: 0 auto;   
+    }
+
+}
+
+
+@media screen and (max-width: 559px) {
+
+}
 
